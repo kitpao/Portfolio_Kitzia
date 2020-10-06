@@ -173,6 +173,12 @@ select {
 
 /* -----------------------End of CSS RESET---------------------- */
 
+/*
+-------------------------------------------------------------
+                          NAVBAR
+-------------------------------------------------------------
+*/
+
 #navbar {
   position: fixed;
   width: 100%;
@@ -183,8 +189,17 @@ h4 {
   padding-top: 3rem;
 }
 
+.navbar-brand {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .tabs {
-  max-width: 22rem;
+  max-width: 26rem;
+  font-family: 'Inter', sans-serif;
 }
 
 .navbar-toggler {
@@ -192,8 +207,7 @@ h4 {
 }
 
 .nav-tabs .nav-link.active {
-
-  background-color: #FF6B00;
+  background-color: #ff6b00;
   color: black;
 }
 
@@ -232,3 +246,10 @@ h4 {
     border: none;
     border-bottom: #dee2e6 1px solid;
   }
+}
+
+/*
+--------------------------------------------------------------
+                            NAVBAR
+--------------------------------------------------------------
+*/
