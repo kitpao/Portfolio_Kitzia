@@ -410,16 +410,41 @@ hr {
   flex-direction: column;
 }
 
+.css1 {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("/images/newsweek_7.png");
+}
+
+.css2 {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("/images/swipex_8.png");
+}
+
+.ruby1 {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("/images/ruby_enumerables.png");
+}
+
+.ruby2 {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("/images/ruby_web_scrapper_dollar_exchange.png");
+}
+
+.rails1 {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("/images/rails_social_network.png");
+}
+
+.rails2 {
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url("/images/rails_tennis_blog_app.png");
+}
+
 .project-card {
-  min-height: 550px; /* ----------------------- */
+  min-height: 42rem;
   font-family: 'Inter', sans-serif;
   font-weight: bold;
   color: #fff;
-  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   margin-bottom: 2rem;
+  background-size: cover;
+  background-position: center;
 }
 
 .inside-project {
@@ -460,7 +485,7 @@ hr {
   background:
     radial-gradient(
       #ff2100 40%,
-      #ff6b00
+      #ff6b00 85%
     );
 }
 
