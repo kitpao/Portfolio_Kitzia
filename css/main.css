@@ -208,7 +208,7 @@ h4 {
 }
 
 .nav-tabs .nav-link.active {
-  background-color: #ff6b00;
+  background-color: #ff2100;
   color: black;
 }
 
@@ -251,9 +251,69 @@ h4 {
 
 /*
 --------------------------------------------------------------
-                            MAIN
+                            MAIN and SECTIONS
 --------------------------------------------------------------
 */
+main {
+  display: flex;
+  flex-direction: column;
+  height: 200vh; /* -------------------------------------- */
+  background-color: #1c1a19;
+}
+
+/* ---------------_Introduction--------------------- */
+
+.introduction {
+  order: -2;
+}
+
+.spacing {
+  height: 23vh;
+}
+
+.welcome {
+  flex-direction: column;
+  order: -1;
+  color: #fff;
+  padding-bottom: 1rem;
+  font-size: 16px;
+  line-height: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-family: 'Crete Round', serif;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.3700000047683716px;
+  text-align: left;
+  color: transparent;
+  background: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.1tbcv17CChdEB5c5eg2iOAHaFj%26pid%3DApi&f=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-position: center 94%;
+  filter: brightness(4);
+  margin-bottom: 0.4rem;
+}
+
+h1::selection {
+  color: red;
+  background: gray;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff5e1;
+}
+
+.welcome p {
+  padding: 0.5rem 0;
+}
+
 aside {
   display: flex;
   justify-content: space-around;
@@ -262,26 +322,43 @@ aside {
   background-color: #1c1a19;
   width: 60%;
   top: 3rem;
+  padding-left: 0.7rem;
 }
 
 .social {
-  color: white;
+  color: #dbd8d7;
   padding: 0.8rem 1rem;
   font-size: 2rem;
   display: block;
 }
 
 .social:hover {
-  color: #ff6b00;
+  color: #ff2100;
 }
 
 @media only screen and (min-width: 768px) {
+  main {
+    display: block;
+  }
+
+  .spacing {
+    height: 30vh;
+  }
+
+  h1 {
+    background-position: center 83%;
+  }
+
   aside {
     flex-direction: column;
     width: 4rem;
+    float: left;
   }
 
   section {
-    padding: 0 4.5rem;
+    padding: 0 5.5rem;
+    display: flex;
   }
 }
+
+/* ---------------_Portfolio-------------------- */
