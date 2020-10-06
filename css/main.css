@@ -183,6 +183,7 @@ select {
   position: fixed;
   width: 100%;
   height: 3rem;
+  z-index: 1;
 }
 
 h4 {
@@ -250,6 +251,37 @@ h4 {
 
 /*
 --------------------------------------------------------------
-                            NAVBAR
+                            MAIN
 --------------------------------------------------------------
 */
+aside {
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  border-bottom-right-radius: 2.5rem;
+  background-color: #1c1a19;
+  width: 60%;
+  top: 3rem;
+}
+
+.social {
+  color: white;
+  padding: 0.8rem 1rem;
+  font-size: 2rem;
+  display: block;
+}
+
+.social:hover {
+  color: #ff6b00;
+}
+
+@media only screen and (min-width: 768px) {
+  aside {
+    flex-direction: column;
+    width: 4rem;
+  }
+
+  section {
+    padding: 0 4.5rem;
+  }
+}
