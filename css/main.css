@@ -277,6 +277,10 @@ main {
   font-family: 'Poppins', sans-serif;
 }
 
+.welcome a {
+  color: #ff2100;
+}
+
 section {
   padding: 0 2rem;
   display: flex;
